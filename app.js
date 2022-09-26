@@ -17,7 +17,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'responsivewebsite/public')));
+app.use(express.static(path.join(__dirname, 'responsivewebsite')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
